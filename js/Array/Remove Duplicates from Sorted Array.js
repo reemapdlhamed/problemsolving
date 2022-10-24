@@ -33,3 +33,13 @@ function removeDup(nums) {
   }
   return nums;
 }
+
+function removeDuplicates(nums) {
+  current_index = 1;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i - 1] == nums[i]) {
+      nums[current_index] = nums[i];
+      current_index += 1;
+    }
+  }
+}
