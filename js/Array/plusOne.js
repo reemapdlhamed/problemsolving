@@ -6,10 +6,20 @@
 // Incrementing by one gives 4321 + 1 = 4322.
 // Thus, the result should be [4,3,2,2].
 
+//convrt to str  then to number adding one then to digits to the array .
+// OR
+//handling many cases
 function plusOne(digits) {
-  let number = 0;
   for (let i = digits.length - 1; i >= 0; i--) {
-    number += digits[i] * 10;
-    console.log(number);
+    if (digits[i] === 9) {
+      console.log(digits[i]);
+      digits[i] = 0;
+    } else {
+      console.log(digits[i]);
+      digits[i]++;
+      return digits;
+    }
   }
+  digits.unshift(1);
+  return digits;
 }
