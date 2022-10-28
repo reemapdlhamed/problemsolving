@@ -3,7 +3,7 @@
 // without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 
 function isSubsequence(s, t) {
-  //two piinters
+  //two pointers
   let i = 0;
   let j = 0;
   while (i < s.length && j < t.length) {
