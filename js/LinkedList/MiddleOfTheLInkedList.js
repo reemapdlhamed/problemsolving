@@ -8,8 +8,8 @@ function ListNode(val, next) {
 
 function middleNode(head) {
   let half = head;
-  let;
-  end = head;
+  let end = head;
+  // there are more than 1 node
   while (end != null && end.next != null) {
     half = half.next;
     end = end.next.next;
